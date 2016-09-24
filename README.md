@@ -1,10 +1,20 @@
-# Material
+# Jekyll Smart Material
 
-Daemonite's Material UI is a fully responsive, cross-platform, front-end interface based on Google Material Design. This lightweight framework is built in HTML5 using Bootstrap, JS and CSS.
+Slick Material Design theme for [Jekyll](https://jekyllrb.com/) powered by [Material Design Lite v.1.2.1](https://getmdl.io/components/index.html).
 
-> A visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science. This is material design.
-> http://www.google.com/design/spec/material-design/introduction.html
+## Live demo
 
-![Material Project Site](./images/screenshots/material01.png)
+[https://ssokurenko.github.io/jekyll-smart-material](https://ssokurenko.github.io/jekyll-smart-material/)
 
-Have a play with a [working prototype of Material](http://daemonite.github.io/material/), let us know what you think at the [Daemon Labs](http://labs.daemon.com.au) forum.
+![screenshot](screenshot.png)
+
+
+## Local deployment for development and testing
+
+Fork or clone the project: `https://github.com/ssokurenko/jekyll-smart-material.git`
+
+Install Jekyll: `sudo gem install jekyll`
+
+Open the project folder: `cd jekyll-smart-material`
+
+Run local Jekyll server: `jekyll serve`, it will be available at: [http://127.0.0.1:4000/](http://127.0.0.1:4000/).
