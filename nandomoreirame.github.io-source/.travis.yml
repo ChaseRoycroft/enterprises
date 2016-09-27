@@ -1,0 +1,18 @@
+language: ruby
+rvm:
+  - 2.3.1
+branches:
+  only:
+    - source
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - GH_USER="Fernando Moreira"
+    - GH_EMAIL="nandomoreira.me@gmail.com"
+cache: bundler
+gemfile: travisGemfile
+install: bundle install
+script: bundle exec rake travis:script
+after_success: bundle exec rake travis:after_success
+notifications:
+  email: false

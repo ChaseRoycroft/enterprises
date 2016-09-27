@@ -1,0 +1,167 @@
+.article
+  @extend .card
+  margin-top: 0
+  margin-bottom: $spacing-base
+  overflow: hidden
+
+  img
+    width: 100%
+    height: auto
+
+.article-meta
+  margin-bottom: $spacing-mini
+  font-family: $font-family-serif
+  font-style: italic
+
+  .divider
+    width: 1px
+    height: 15px
+    border: $border-base
+    margin: 0 $spacing-mini
+
+  .tags
+    a
+      display: inline-block
+      margin-right: 8px
+
+  &, a
+    font-size: .9rem
+    display: inline-block
+    color: rgba(#222, .5)
+
+.article-title
+  font-size: 1.8rem
+  margin-bottom: $spacing-mini
+
+  &, a
+    color: $color-secondary
+
+  +media($desktop)
+    font-size: 2.2rem
+
+.blog-list
+  .article p
+    margin-bottom: 0
+
+.single
+  .article
+    padding-bottom: 0
+
+  .tags a
+    color: rgba(#fff, .7)
+
+  .article-header
+    text-align: center
+    border-bottom: $border-base
+    margin-bottom: $spacing-base
+
+  .article-title
+    font-size: 2.2rem
+    margin: $spacing-mini 0 $spacing-base
+
+    +media($desktop)
+      font-size: 3rem
+
+.image
+  margin-left: -($spacing-base)
+  margin-right: -($spacing-base)
+
+.image,
+iframe
+  margin-bottom: $spacing-small
+
+.comments
+  padding: $spacing-base
+  @extend .clearfix
+
+  +media($desktop)
+    padding: $spacing-big $spacing-small
+
+iframe
+  border: none
+  margin: 0
+  padding: 0
+
+.responsive-video
+  position: relative
+  margin-bottom: 30px
+  padding-bottom: 56.25%
+  padding-top: 25px
+  height: 0
+
+  object,
+  embed,
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.share-icons
+  text-align: center
+
+  ul
+    margin: 0
+    padding: 0
+    text-align: center
+
+  svg
+    display: block
+
+  li.facebook
+    a:after
+      content: 'Facebook'
+      color: #3b5998
+
+  li.twitter
+    a:after
+      content: 'Twitter'
+      color: #1da1f2
+
+  a
+    font-weight: $font-weight-light
+    vertical-align: middle
+    display: block
+    opacity: .2
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out
+    color: $color-base
+    text-decoration: none
+
+    &:after
+      opacity: 0
+      display: block
+      text-align: center
+      transform: translateY(-40%)
+      transition: opacity .2s ease-in-out, transform .2s ease-in-out
+      position: relative
+      left: -15%
+      font-size: 1rem
+
+    &:hover
+      opacity: .75
+      transform: rotate(8deg)
+
+      &:after
+        opacity: 1
+        transform: translateY(0)
+
+
++media(max-width $tablet)
+  body.single
+    .image
+      margin-left: 0
+      margin-right: 0
+
+    .main > .container,
+    .article, blockquote
+      padding-left: 0
+      padding-right: 0
+
+    .article
+      p, h1, h2,
+      h3, h4, h5,
+      .share-icons,
+      .article-title
+        padding-left: $spacing-base
+        padding-right: $spacing-base

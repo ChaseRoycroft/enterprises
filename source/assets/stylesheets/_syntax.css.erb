@@ -1,0 +1,26 @@
+<%= Rouge::Themes::Github.render(:scope => '.highlight') %>
+
+.highlight {
+  padding: .8rem 1.25rem;
+  margin-bottom: 1.875rem;
+  border: none;
+  overflow-x: auto;
+  border-radius: .1875rem;
+}
+
+.highlight,
+.highlight pre {
+  background-color: rgba(0, 0, 0, .05);
+  font-size: .8rem;
+}
+
+.highlight code {
+  font-size: .8rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.highlight.sass .err {
+  background-color: transparent;
+}

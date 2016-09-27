@@ -1,63 +1,40 @@
-# nandomoreira.me jekyll theme
+# [nandomoreira.me](http://nandomoreira.me/) [![Build Status](https://travis-ci.org/nandomoreirame/nandomoreirame.github.io.svg?branch=source)](https://travis-ci.org/nandomoreirame/nandomoreirame.github.io) [![Code Climate](https://codeclimate.com/github/nandomoreirame/nandomoreirame.github.io/badges/gpa.svg)](https://codeclimate.com/github/nandomoreirame/nandomoreirame.github.io) [![Issue Count](https://codeclimate.com/github/nandomoreirame/nandomoreirame.github.io/badges/issue_count.svg)](https://codeclimate.com/github/nandomoreirame/nandomoreirame.github.io)
 
-### [Preview](http://nandomoreira.me/nandomoreira-jekyll-theme/)
+> :gem: My personal website and blog >> http://nandomoreira.me/
 
-## Setup
+---
 
-### In the terminal run the commands
+> :warning: Esse repositório é atualizado constantemente!
 
-```
-$ sudo npm i -g gulp bower browser-sync
-$ sudo gem install bundler
-$ bundle install
-$ npm install
-```
+> :warning: This repository is constantly updated!
 
-## Using Rake tasks
+---
 
-```
-$ rake post title="TITLE OF THE POST"
-$ rake page name="about.md"
-$ rake category title="Programing"
-$ rake tag title="Jekyll"
-```
+![nandomoreira.me!](/nandomoreira.me.png)
 
-## Using Jekyll
+---
 
-### Running the server:
+## Contributing ##
+
+> It is my personal repo I'm not accepting it pull requests.
+
+---
+
+## Setup ##
 
 ```
-$ jekyll server
-```
-
-Access, [localhost:4000](http://localhost:4000/)
-
-## Using Gulp
-
-### Rum gulp
-
-```
-$ gulp
+sudo gem install bundler
+bundle install
 ```
 
 ---
 
-## Deploy in Github pages in 2 steps
+### [middleman](https://middlemanapp.com/) ###
 
-1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
-2. Run `rake` or `rake publish` for build and publish on Github
+```
+middleman server
+```
 
----
+## License ##
 
-* [Jekyll](http://jekyllrb.com/);
-* [Jekyll Documentation](http://jekyllrb.com/docs/home/);
-* [Como definir URLs curtas no Jekyll](http://nandomoreira.me/urls-curtas-no-jekyll/);
-* [Adicionando Disqus ao seu projeto Jekyll](http://nandomoreira.me/adicionando-disqus-ao-seu-projeto-jekyll/);
-
----
-
-### Copyright and license
-
-It is under [the MIT license](/LICENSE).
-
-Enjoy! :yum:
+It is free under the [open-source MIT license](/LICENSE).
