@@ -1,109 +1,68 @@
-title:            Site Title
-description:      Site description for the metas.
-logo:             omikron.png
-disqus_shortname: shortname
-# Assign a default image for your site's header and footer
-default_bg:       default_bg.jpg
-search:           true
-share:            true
-# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
-readtime:         true
-# Turn on or off the fin animations in the header and footer
-triangleheader:	  true
-animated_fins:    true
-# Specify the fin color in RGB value
-fin_color:        "255,255,255"
-# Change url to your domain. Leave localhost server or blank when working locally.
-url:          http://hmfaysal.me/hmfaysal-omega-theme
-# baseurl:           
+permalink   : /:title/
+markdown    : kramdown
+highlighter : pygments
 
-# Gems used
-gems:
-  - jekyll-feed
-  - jekyll-archives
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-seo-tag
+paginate: 2 #6
+comments: true
+paginate_path: "/page/:num"
 
-# Archives configuration
-# https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: 'archive'
-  permalinks:
-    # year: '/:year/'
-    # month: '/:year/:month/'
-    # day: '/:year/:month/:day/'
-    tag: '/archive/tag/:name/'
-    category: '/archive/category/:name/'
+baseurl: "/nandomoreira-jekyll-theme" # change to empty string ""
+domain_name: nandomoreira.me
+google_analytics: UA-52446115-1
 
-# Owner/author information
+source:      source
+destination: _site
+
+# cover: /assets/images/header-cover.png
+
+# site title, description, meta_description, meta_keywords
+# Details for the RSS feed generator
+name: Fernando Moreira
+title: Fernando Moreira | Desenvolvimento Web e tudo mais..
+description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
+meta_description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
+meta_keywords: "site, website, loja virtual, lojas virtuais, e-commerce, wordpress, frontend, front-end, html5, css3, javascript, jquery, seo, otimizacao, performance"
+url: http://nandomoreira.me
+production_url: http://nandomoreira.me
+repo: https://github.com/nandomoreirame/nandomoreira-jekyll-theme
+disqus_shortname: "nandothemes"
+rss_path: source/
 author:
-  name:           Your Name
-  picture:        your-photo.jpg
-  email:          your@email.com
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Some Details about yourself
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  facebook:
-  github:
-  linkedin:
-  instagram:
-  tumblr:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    "http://plus.google.com/123123123123132123"
+  name      : Fernando Moreira
+  image     : /assets/images/author.jpg
+  email     : nandomoreira.me@gmail.com
+  url       : http://nandomoreira.me
+  facebook  : http://facebook.com/fernando.dev
+  twitter   : http://twitter.com/nandomoreirame
+  instagram : http://instagram.com/nandomoreira.me
+  github    : http://github.com/nandomoreirame
+  linkedin  : http://linkedin.com/in/nandomoreirame
+  bio       : "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
+# thought
+thought:
+  text: I have no special talent. I am only passionately curious.
+  author: Albert Einstein
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: Categories
-    url: /categories
-  - title: Tags
-    url: /tags
+# Plugin: jekyll-assets
+assets:
+  dirname: /assets
+  baseurl: /nandomoreira-jekyll-theme/assets/ # change to /assets/
+  sources:
+    - assets/images
+    - assets/fonts
+    - assets/css
+    - assets/js
+  cache: true
+  gzip: [ text/css, application/javascript ]
 
-# Sitemap configuration
-# https://github.com/kinnetica/jekyll-plugins
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/atom.xml"
-        - "/feed.xml"
-        - "/feed/index.xml"
-    include_posts:
-        - "/index.html"
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  ignore:
+    envs: all
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-markdown:    kramdown
-highlighter: rouge
-paginate:    6
-paginate_path: "/blog/:num/"
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title
-  pages:
-    output: true
-    permalink: /:title
-
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
